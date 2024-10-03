@@ -1,0 +1,142 @@
+/* about.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  
+}
+
+.one {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+  
+}
+
+.two,
+.three {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.two p,
+.three p {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 10px;
+  border-left: 4px solid #c69c6d;
+  background-color: #fdfdfd;
+  transition: background-color 0.3s;
+  
+}
+
+.two p:hover,
+.three p:hover {
+  background-color: #f0e1d2;
+}
+
+.four {
+  flex: 0 0 250px; /* Fixed width for the image container */
+  text-align: center;
+}
+
+.four img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.four h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.logo img {
+  height: 90;
+  width: 90;
+  border-radius: 50%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a:hover {
+  background-color: #d69f7e;
+  color: #774936;
+}
+
+.nav-links a {
+  padding: 10px;
+  color: #8f5c3f;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  width: 100%;
+  width: 100%;
+  background-color: #d3b88c;
+  padding: 10px 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+
+
+  .content {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+}
+  h1 {
+      font-size: 18px; /* Smaller header font size */
+  }
+
+  .one{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-section p {
+      font-size: 14px; /* Adjust paragraph font size */
+  }
+}

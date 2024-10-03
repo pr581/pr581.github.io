@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/index.css"/>
+  </head>
+  <body>
+    
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <div class="ten">
+           
+          </div>
+          <a
+            ><img
+              src="images/WhatsApp Image 2024-09-19 at 18.05.51_57685780.jpg"
+          /></a> 
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+           
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="img-slider">
+      <h1>Manohoar Store:Stockist ALL Kind confectionery & Biscuits</h1>
+      <div class="slider">
+       
+        <div class="slides">
+          <img
+            src="images/WhatsApp Image 2024-09-20 at 17.38.35_b448ff18.jpg"
+            height="200px"
+            width="200px"
+          />
+          <img
+            src="images/WhatsApp Image 2024-09-20 at 17.38.36_058a82c2.jpg"
+            height="200px"
+            width="200px"
+          />
+          <img
+            src="images/WhatsApp Image 2024-09-20 at 17.38.36_733e07f2.jpg"
+            height="200px"
+            width="200px"
+          />
+          <img
+            src="images/WhatsApp Image 2024-09-20 at 17.38.35_b448ff18.jpg"
+            height="200px"
+            width="200px"
+          />
+          <img
+            src="images/WhatsApp Image 2024-09-20 at 17.38.36_058a82c2.jpg"
+            height="200px"
+            width="200px"
+          />
+          <img
+            src="images/WhatsApp Image 2024-09-20 at 17.38.36_733e07f2.jpg"
+            height="200px"
+            width="200px"
+          />
+          <img
+            src="images/WhatsApp Image 2024-09-20 at 17.38.35_b448ff18.jpg"
+            height="200px"
+            width="200px"
+          />
+          <img
+            src="images/WhatsApp Image 2024-09-20 at 17.38.36_058a82c2.jpg "
+            height="200px"
+            width="200px"
+          />
+          <img
+            src="images/WhatsApp Image 2024-09-20 at 17.38.36_733e07f2.jpg"
+            height="200px"
+            width="200px"
+          />
+          <img
+            src="images/WhatsApp Image 2024-09-20 at 17.38.36_733e07f2.jpg"
+            height="200px"
+            width="200px"
+          />
+          <img
+            src="images/WhatsApp Image 2024-09-20 at 17.38.36_733e07f2.jpg"
+            height="200px"
+            width="200px"
+          />
+          <img
+            src="images/WhatsApp Image 2024-09-20 at 17.38.36_733e07f2.jpg"
+            height="200px"
+            width="200px"
+          />
+        </div>
+      </div>
+    </div>
+    <button class="prev">&#x2190;</button>
+    <button class="next">&#x2192;</button>
+</div>
+
+<div class="container">
+  <div class="box">
+
+    <img src="images/R.png">
+   
+    <h1>CADBURY DAIRY MILK SLIK </h1>
+    <p>
+      There is nothing bad present in Cadbury Dairy Milk Silk that you can't consume occasionally. In fact, it is free from any harmful preservatives, which is a great plus point. The problem is the high sugar content and high saturated fat content.
+    </p>
+  </div>
+  <div class="box">
+    <img src="images/Kit-Kat-Logo.png">
+    <h1> KIT KAT CHOCOLATE</h1>
+    <p>
+      The Kit Kat Orange was the first flavour variant to be introduced in the United Kingdom, in 1996 and 1998 in Ireland. It was followed in 1997 by the Kit Kat Dark and Kit Kat Mint.
+    </p>
+  </div>
+  <div class="box">
+   <img src="images/OIP.jpeg">
+    <h1>FIVE STAR CHOCOLATE </h1>
+    <p>
+      Cadbury Five Star Chocolate is a delicious and creamy chocolate bar made by Cadbury. It is a combination of crunchy biscuit, caramel, and chocolate.
+    </p>
+  </div>
+  <div class="box">
+   <img src="images/dark.jpg">
+    <h1>DARK  CHOCOLATE </h1>
+    <p>
+      Cocoa beans were once powdered and mixed with honey, spices, chili peppers, vanilla, and water to prepare a frothy drink savored by the civilizations in Central America.
+    </p>
+  </div>
+  <div class="box">
+    <img src="images/image-asset.jpeg">
+    <h1>WHITE CHOCOLATE </h1>
+    <p>
+      White chocolate is a sweet and creamy delight that often divides chocolate lovers. While some argue that it is not “real” chocolate due to its lack of cocoa solids, others find its smooth texture irresistible.
+    </p>
+  </div>
+  <div class="box">
+   <img src="images/OIP (1).jpeg">
+    <h1>BISCUIT</h1>
+    <p>
+      Biscuit slogans are short and catchy phrases used to attract customers. They highlight the delicious taste, quality ingredients, and the comfort of enjoying biscuits.
+    </p>
+  </div>
+</div>
+
+
+<script>
+  const slider = document.querySelector('.slider');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+  const slideWidth = 210; // 200px image width + 10px gap
+  let currentPosition = 0;
+
+  prevBtn.addEventListener('click', () => {
+      if (currentPosition < 0) {
+          currentPosition += slideWidth;
+          slider.style.transform = `translateX(${currentPosition}px)`;
+      }
+  });
+
+  nextBtn.addEventListener('click', () => {
+      const maxScroll = -(slider.scrollWidth - slider.clientWidth);
+      if (currentPosition > maxScroll) {
+          currentPosition -= slideWidth;
+          slider.style.transform = `translateX(${currentPosition}px)`;
+      }
+  });
+</script>
+
+  </body>
+</html>
